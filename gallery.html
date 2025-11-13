@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Gallery - Parker</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <span class="logo-text">Parker</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About Us</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="innovation.html"><i class="fas fa-atom"></i> Innovation</a></li>
+                <li><a href="brand.html"><i class="fas fa-palette"></i> Brand</a></li>
+                <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="timeline.html"><i class="fas fa-clock"></i> Timeline</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1 class="page-title">Model Showcase</h1>
+            <p class="page-subtitle">3D Renderings, Test Photos, System Topology & Site Data. Click any thumbnail to view full-size images and download related resources.</p>
+        </div>
+    </section>
+
+    <!-- Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="render">3D Renderings</button>
+                <button class="filter-btn" data-filter="photo">Test Photos</button>
+                <button class="filter-btn" data-filter="topo">System Topology</button>
+            </div>
+            <div class="gallery-actions">
+                <button class="action-btn"><i class="fas fa-download"></i> Download Package</button>
+                <button class="action-btn"><i class="fas fa-image"></i> Request Original Images</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="image-grid">
+                <!-- 3D Renderings -->
+                <div class="gallery-item" data-category="render">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cube"></i>
+                            <p>3D Render</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge render">RENDER</span>
+                        <h3>3D Render · Garage Bird's Eye View</h3>
+                        <p>High-fidelity rendering showcasing equipment distribution and laser guidance paths</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="render">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cube"></i>
+                            <p>3D Render</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge render">RENDER</span>
+                        <h3>Laser Guidance Illustration</h3>
+                        <p>Visualization of Laser Projection Paths During Emergency Evacuation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="render">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cube"></i>
+                            <p>3D Render</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge render">RENDER</span>
+                        <h3>Camera Coverage Visualization</h3>
+                        <p>Visual representation of complete parking lot coverage with camera placement</p>
+                    </div>
+                </div>
+
+                <!-- Test Photos -->
+                <div class="gallery-item" data-category="photo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <p>Test Photo</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge photo">PHOTO</span>
+                        <h3>Test Scenario · Urban Underground Garage</h3>
+                        <p>Field deployment photos featuring cameras and ground locks</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <p>Test Photo</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge photo">PHOTO</span>
+                        <h3>On-Site Debugging</h3>
+                        <p>Engineers Performing Equipment Calibration and Adjustment at Site</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <p>Test Photo</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge photo">PHOTO</span>
+                        <h3>Ground Lock Installation</h3>
+                        <p>Close-up view of smart ground lock hardware and installation process</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <p>Test Photo</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge photo">PHOTO</span>
+                        <h3>Real-time Monitoring Dashboard</h3>
+                        <p>Control room setup showing live monitoring and management interface</p>
+                    </div>
+                </div>
+
+                <!-- System Topology -->
+                <div class="gallery-item" data-category="topo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-project-diagram"></i>
+                            <p>System Diagram</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge topo">TOPO</span>
+                        <h3>System Topology Diagram</h3>
+                        <p>Communication and Data Flow from Edge Devices to Cloud</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="topo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-project-diagram"></i>
+                            <p>System Diagram</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge topo">TOPO</span>
+                        <h3>API Data Flow Example</h3>
+                        <p>Interface and Data Structure Diagram</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="topo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-project-diagram"></i>
+                            <p>System Diagram</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge topo">TOPO</span>
+                        <h3>Network Architecture</h3>
+                        <p>PoE network layout and edge computing infrastructure design</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="topo">
+                    <div class="item-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-project-diagram"></i>
+                            <p>System Diagram</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-badge topo">TOPO</span>
+                        <h3>Emergency Response Flow</h3>
+                        <p>Laser guidance system activation and evacuation routing diagram</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Full-Size View -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle">Image Title</h3>
+                <p id="modalDesc">Image Description</p>
+                <div class="modal-actions">
+                    <button class="modal-btn"><i class="fas fa-download"></i> Download</button>
+                    <button class="modal-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <button class="nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">P</div>
+                    <span class="logo-text">Parker</span>
+                </div>
+                <div class="footer-tagline">Precision Parking · Smart Evacuation</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Parker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

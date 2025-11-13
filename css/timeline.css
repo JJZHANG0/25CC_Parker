@@ -1,0 +1,253 @@
+/* Timeline Page Styles */
+.timeline-hero {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #0A74DA 0%, #00BFA5 100%);
+    color: var(--white);
+}
+
+.timeline-hero .page-title,
+.timeline-hero .page-subtitle {
+    color: var(--white);
+}
+
+.timeline-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--primary-blue), var(--accent-purple));
+}
+
+.timeline-item {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-marker {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.marker-dot {
+    width: 30px;
+    height: 30px;
+    background: var(--white);
+    border: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: var(--transition-normal);
+}
+
+.timeline-item.active .marker-dot {
+    background: var(--primary-blue);
+    box-shadow: 0 0 20px var(--primary-blue);
+    animation: pulse 2s infinite;
+}
+
+.marker-year {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: var(--font-weight-bold);
+    font-size: 1.25rem;
+    min-width: 90px;
+    text-align: center;
+}
+
+.timeline-content {
+    flex: 1;
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+}
+
+.timeline-content:hover {
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.timeline-item.active .timeline-content {
+    background: var(--white);
+    border: 2px solid var(--primary-blue);
+}
+
+.timeline-date {
+    color: var(--primary-blue);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 0.75rem;
+}
+
+.timeline-content h3 {
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    opacity: 0.2;
+}
+
+.current-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: var(--font-weight-semibold);
+    margin-top: 1rem;
+}
+
+.achievements-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+}
+
+.achievements-section .section-title {
+    color: var(--white);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: var(--transition-normal);
+}
+
+.achievement-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-number {
+    font-size: 3rem;
+    font-weight: var(--font-weight-black);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-label {
+    font-size: 1.125rem;
+    opacity: 0.9;
+}
+
+.roadmap-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.roadmap-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.roadmap-item {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 4px solid var(--primary-blue);
+    transition: var(--transition-normal);
+}
+
+.roadmap-item:hover {
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+}
+
+.roadmap-quarter {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 1rem;
+}
+
+.roadmap-item h3 {
+    margin-bottom: 0.75rem;
+}
+
+.roadmap-item p {
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 45px;
+    }
+    
+    .timeline-item {
+        gap: 2rem;
+    }
+    
+    .marker-year {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        min-width: 70px;
+    }
+    
+    .timeline-icon {
+        font-size: 2rem;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .roadmap-content {
+        grid-template-columns: 1fr;
+    }
+}

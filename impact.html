@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Impact - Parker</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .impact-hero {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+        }
+        
+        .impact-hero .page-title,
+        .impact-hero .page-subtitle {
+            color: var(--white);
+        }
+        
+        .impact-section {
+            padding: 5rem 0;
+        }
+        
+        .impact-section:nth-child(even) {
+            background: var(--light-gray);
+        }
+        
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .impact-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+            text-align: center;
+        }
+        
+        .impact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .impact-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .impact-icon i {
+            font-size: 3rem;
+            color: var(--white);
+        }
+        
+        .impact-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-box p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        @media (max-width: 768px) {
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <span class="logo-text">Parker</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About Us</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="innovation.html"><i class="fas fa-atom"></i> Innovation</a></li>
+                <li><a href="brand.html"><i class="fas fa-palette"></i> Brand</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="timeline.html"><i class="fas fa-clock"></i> Timeline</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="impact-hero">
+        <div class="container">
+            <h1 class="page-title">Social Impact</h1>
+            <p class="page-subtitle">Creating positive change in urban mobility and community safety</p>
+            <div class="impact-stats">
+                <div class="stat-box">
+                    <h3>50,000+</h3>
+                    <p>Hours Saved Annually</p>
+                </div>
+                <div class="stat-box">
+                    <h3>35%</h3>
+                    <p>Reduction in Traffic Congestion</p>
+                </div>
+                <div class="stat-box">
+                    <h3>60%</h3>
+                    <p>Faster Emergency Evacuation</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1,000+</h3>
+                    <p>Tons CO₂ Reduced</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Benefits -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title">Benefits for Drivers</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Savings</h3>
+                    <p>Reduce average parking search time by 25-35%, giving drivers more time for what matters.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Reduced Stress</h3>
+                    <p>Eliminate the frustration of searching for parking with real-time availability and navigation.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost Efficiency</h3>
+                    <p>Save on fuel costs and reduce vehicle wear from circling for parking spots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urban Impact -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title">Urban & Environmental Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Reduced Congestion</h3>
+                    <p>Decrease urban traffic congestion by eliminating unnecessary circling for parking spaces.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Lower Emissions</h3>
+                    <p>Significant reduction in CO₂ emissions from reduced idle time and shorter travel distances.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Smart City Integration</h3>
+                    <p>Provide valuable data for urban planning and smart city initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Impact -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title">Safety & Emergency Response</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enhanced Safety</h3>
+                    <p>Real-time monitoring and presence detection improve overall parking facility security.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Emergency Evacuation</h3>
+                    <p>Laser guidance system enables rapid evacuation during fires, earthquakes, or other emergencies.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Lives Protected</h3>
+                    <p>Faster evacuation times significantly reduce risk of casualties in emergency situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESG Contribution -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title">ESG & Sustainability Goals</h2>
+            <p class="section-subtitle">Aligning with global Environmental, Social, and Governance objectives</p>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Environmental</h3>
+                    <p>Reduce carbon footprint through optimized parking, support for electric vehicles, and energy-efficient edge computing.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Social</h3>
+                    <p>Improve quality of life, accessibility for all users, and contribute to safer urban communities.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Governance</h3>
+                    <p>Transparent data management, privacy compliance, and ethical AI deployment practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">P</div>
+                    <span class="logo-text">Parker</span>
+                </div>
+                <div class="footer-tagline">Precision Parking · Smart Evacuation</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Parker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

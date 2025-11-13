@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker - Precision Parking · Smart Navigation for the Future</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <span class="logo-text">Parker</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About Us</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="innovation.html"><i class="fas fa-atom"></i> Innovation</a></li>
+                <li><a href="brand.html"><i class="fas fa-palette"></i> Brand</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="timeline.html"><i class="fas fa-clock"></i> Timeline</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <canvas id="parkingCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Park with Precision, Navigate the Future</h1>
+            <p class="hero-subtitle">Upgrade traditional underground parking garages into secure, efficient, and scalable smart spaces with low-cost visual IoT and intelligent scheduling—while providing laser evacuation guidance during emergencies.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25–35%</div>
+                    <div class="stat-label">Reduction in average parking time</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95–98%</div>
+                    <div class="stat-label">Visual recognition accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30–40%</div>
+                    <div class="stat-label">Increase in parking space turnover rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parking Demo Section -->
+    <section class="parking-demo">
+        <div class="container">
+            <h2 class="section-title">Implementation of Parking Spaces - Full Coverage</h2>
+            <p class="section-subtitle">Deep Vision + Edge Computing - GPS-Free Positioning</p>
+            <div class="demo-container">
+                <canvas id="parkingSimulation"></canvas>
+                <div class="demo-controls">
+                    <button class="demo-btn" id="startDemo">Start Simulation</button>
+                    <button class="demo-btn" id="pauseDemo">Pause</button>
+                    <button class="demo-btn" id="resetDemo">Reset</button>
+                </div>
+                <div class="demo-legend">
+                    <div class="legend-item"><span class="legend-color available"></span> Available</div>
+                    <div class="legend-item"><span class="legend-color occupied"></span> Occupied</div>
+                    <div class="legend-item"><span class="legend-color reserved"></span> Reserved</div>
+                    <div class="legend-item"><span class="legend-color vehicle"></span> Vehicle</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Highlights -->
+    <section class="solution-highlights">
+        <div class="container">
+            <h2 class="section-title">Solution Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Visual IoT Modeling</h3>
+                    <p>PoE-powered edge cameras autonomously build models, eliminating GPS dependency and enabling high-precision indoor navigation.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Parking Space Reservation and Ground Lock</h3>
+                    <p>Reserve parking spots via mini-program, with smart locks automatically controlled through an overdue release and anomaly reporting mechanism.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Laser Emergency Guidance</h3>
+                    <p>In emergencies, it automatically switches to laser guidance and coordinates with personnel location systems to enable rapid evacuation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Impact -->
+    <section class="social-impact">
+        <div class="container">
+            <h2 class="section-title">Social Impact</h2>
+            <p class="impact-text">Reduce vehicle owner wait times and enhance parking space utilization; shorten evacuation times during emergencies, lowering the risk of casualties; provide data support for urban ESG and emergency management.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="demo-request">
+        <div class="container">
+            <h2 class="section-title">Contact and Schedule a Demo</h2>
+            <p class="section-subtitle">Interested in deploying Parker at your site? Leave your details, and we'll arrange a product demonstration and technical consultation.</p>
+            <form class="demo-form" id="demoForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Company/Organization Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Contact Email or Phone Number" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">P</div>
+                    <span class="logo-text">Parker</span>
+                </div>
+                <div class="footer-tagline">Precision Parking · Smart Evacuation</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Parker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

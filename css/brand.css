@@ -1,0 +1,237 @@
+/* Brand Page Styles */
+.brand-hero {
+    padding: 5rem 0 3rem;
+    background: linear-gradient(135deg, #0A74DA 0%, #00BFA5 100%);
+    color: var(--white);
+}
+
+.brand-hero .page-title,
+.brand-hero .page-subtitle {
+    color: var(--white);
+}
+
+.color-palette,
+.logo-variations,
+.logo-guidelines,
+.typography-section {
+    padding: 5rem 0;
+}
+
+.color-palette {
+    background: var(--white);
+}
+
+.colors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.color-card {
+    text-align: center;
+}
+
+.color-swatch {
+    height: 200px;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.color-code {
+    font-family: 'Monaco', monospace;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    margin: 1rem 0;
+}
+
+.color-desc {
+    color: var(--text-gray);
+}
+
+.logo-variations {
+    background: var(--light-gray);
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.logo-variant {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.logo-display {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.logo-display.primary-bg {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.logo-display.light-bg {
+    background: linear-gradient(135deg, #0A74DA 0%, #00BFA5 100%);
+}
+
+.logo-display.mono-bg {
+    background: var(--secondary-black);
+}
+
+.display-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.display-logo.inverted .logo-icon,
+.display-logo.inverted .logo-text {
+    color: var(--white);
+}
+
+.display-logo.mono .logo-icon {
+    background: var(--white);
+    color: var(--secondary-black);
+}
+
+.logo-tagline {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.logo-tagline.inverted {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.logo-guidelines {
+    background: var(--white);
+}
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.guideline-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.guideline-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.guidelines-visual {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.safe-space-demo {
+    display: inline-block;
+    position: relative;
+    padding: 3rem;
+    background: var(--light-gray);
+    border-radius: 16px;
+    margin-top: 2rem;
+}
+
+.clearance-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px dashed var(--primary-blue);
+    border-radius: 16px;
+}
+
+.demo-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.dimension-label {
+    margin-top: 1rem;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.typography-section {
+    background: var(--light-gray);
+}
+
+.typography-content {
+    max-width: 900px;
+    margin: 3rem auto 0;
+}
+
+.font-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+.typography-demo {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 16px;
+}
+
+.type-sample {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.type-sample:last-child {
+    border-bottom: none;
+}
+
+.type-specs {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.font-weights {
+    margin-top: 2rem;
+}
+
+.weight-sample {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+    .colors-grid,
+    .logo-grid,
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+    }
+}
